@@ -6,19 +6,11 @@
 /*   By: drecours <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/30 10:43:21 by drecours          #+#    #+#             */
-/*   Updated: 2017/01/30 14:57:44 by drecours         ###   ########.fr       */
+/*   Updated: 2017/01/30 15:10:50 by drecours         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./libft/libft.h"
-#include <stdio.h>
-#include <unistd.h>
-
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 char	*ft_create_map(int nb_tetri)
 {
@@ -41,10 +33,4 @@ char	*ft_create_map(int nb_tetri)
 	}
 	map[i] = '\0';
 	return (map);
-}
-
-int		main(void)
-{
-	printf("%s", ft_create_map(26));
-	return (0);
 }
