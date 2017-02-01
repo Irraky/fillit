@@ -37,6 +37,7 @@ bool	ft_backtrack(char **map, int nb_caract, int position, tetri)
 			on le place;
 			si ft_backtrack (**map, nb_caract, position++, tetri +1  (tetri suivant))
 				return true;
+			remettre des points la ou on avait placé la pièce;
 		i++;
 	return false;
 }
